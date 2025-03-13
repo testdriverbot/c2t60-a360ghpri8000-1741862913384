@@ -1,0 +1,17 @@
+version: 4.2.18
+session: 67d2ba4b1f46b71fa13f2754
+steps:
+  - prompt: Navigate to the homepage.
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - home
+  - prompt: Enter a search term in the search bar.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+      - command: type
+        text: example search term
