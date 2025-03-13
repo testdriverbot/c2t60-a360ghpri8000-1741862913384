@@ -1,0 +1,9 @@
+version: 4.2.18
+session: 67d2ba5520b70f4b7ac68659
+steps:
+  - prompt: Navigate to the homepage.
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - home
