@@ -1,0 +1,81 @@
+version: 4.2.18
+session: 67d2ba4b20b70f4b7ac68653
+steps:
+  - prompt: Navigate to the form page.
+    commands:
+      - command: hover-text
+        text: c2t60-a360.gh.pri
+        description: current URL in the address bar
+        action: click
+      - command: type
+        text: http://example.com/form
+        description: enter the form page URL
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the form page.
+    commands:
+      - command: hover-text
+        text: c2t60-a360.gh.pri
+        description: current URL in the address bar
+        action: click
+      - command: type
+        text: http://example.com/form
+        description: enter the form page URL
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the form page.
+    commands:
+      - command: hover-text
+        text: c2t60-a360.gh.pri
+        description: current URL in the address bar
+        action: click
+      - command: type
+        text: http://example.org/form
+        description: enter an alternative form page URL
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the form page.
+    commands:
+      - command: hover-text
+        text: c2t60-a360.gh.pri
+        description: current URL in the address bar
+        action: click
+      - command: type
+        text: http://example.org/form
+        description: enter an alternative form page URL
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the form page.
+    commands:
+      - command: hover-text
+        text: c2t60-a360.gh.pri
+        description: current URL in the address bar
+        action: click
+      - command: type
+        text: http://example.net/form
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the form page.
+    commands:
+      - command: hover-text
+        text: c2t60-a360.gh.pri
+        description: current URL in the address bar
+        action: click
+      - command: type
+        text: http://example.com/form
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Fill in all the necessary fields with test data.
+    commands: []
+  - prompt: Click the "Submit" button.
+    commands: []
+  - prompt: >-
+      Assert that a success message is displayed after submission.  # Use the
+      content of the file from the environment
+    commands: []
