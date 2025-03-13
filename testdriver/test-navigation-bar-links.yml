@@ -1,0 +1,25 @@
+version: 4.2.18
+session: 67d2ba4820b70f4b7ac68651
+steps:
+  - prompt: Navigate to the homepage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - t
+  - prompt: Click on each link in the navigation bar.
+    commands:
+      - command: hover-text
+        text: Gmail
+        description: Gmail link in the navigation bar
+        action: click
+      - command: hover-text
+        text: Images
+        description: Images link in the navigation bar
+        action: click
+  - prompt: >-
+      Assert that each link leads to the correct page and no errors are
+      displayed.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Google Images page is displayed correctly
